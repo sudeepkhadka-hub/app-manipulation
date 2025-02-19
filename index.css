@@ -1,26 +1,110 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 
 }
 
 body{
-    background-color: rgb(145, 143, 143);
+    background-color: rgb(255, 255, 255);
+    color: black;
     
 }
 
 .main-div{
     display: flex;
     justify-content: center;
-    background-color: bisque;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
     border: black 2px solid;
     border-radius: 20px;
     width: 50%;
     margin: auto;
     margin-top: 5%;
     height: 50vh;
+    padding: 10px;
 }
 
 .main-div .scroll-bar{
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     margin: 0;
+    width: 24%;
+    border: black 2px solid;
+    border-radius: 5px;
+
+}
+
+.scroll-bar .logo{
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    padding: 5px;
+border: black 2px solid;
+border-radius: 2px;
+margin: 5px;
+}
+
+.scroll-bar .menu{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    padding: 2px;
+    margin: 0 5px 5px;
+    flex-grow: 1;
+
+}
+
+.sec-div{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}   
+
+.sec-div .navbar{
+    flex-direction: column;
+        border: gray 2px solid;
+        border-radius: 2px;
+        
+}
+.sec-div .watmind {
+border: gray 2px solid;
+    border-radius: 2px;
+  
+}
+.sec-div .content {
+border: gray 2px solid;
+    border-radius: 2px;
+  
+}
+
+
+
+.third-div{ 
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    border: black 2px solid;
+    border-radius: 5px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}   
+
+.third-div .friend{
+    display: flex;
+    border: gray 2px solid;
+    border-radius: 2px;
+    width:max-content;
 }
