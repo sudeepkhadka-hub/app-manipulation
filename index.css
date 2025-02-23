@@ -1,63 +1,61 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
-
 }
 
-body{
-    background-color: rgb(255, 255, 255);
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 245, 245);
     color: black;
-    
+    padding: 20px;
 }
 
-.main-div{
+.main-div {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    color: rgb(0, 0, 0);
     border: black 2px solid;
     border-radius: 20px;
-    width: 50%;
+    width: 80%;
     margin: auto;
     margin-top: 5%;
-    height: 50vh;
+    height: auto;
     padding: 10px;
 }
 
-.main-div .scroll-bar{
+.scroll-bar {
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 255, 255);
     gap: 30px;
     margin: 0;
     width: 24%;
     border: black 2px solid;
     border-radius: 5px;
-
 }
 
-.scroll-bar .logo{
+.scroll-bar .logo {
     display: flex;
     gap: 5px;
     justify-content: space-evenly;
     padding: 5px;
-border: black 2px solid;
-border-radius: 2px;
-margin: 5px;
+    border: black 2px solid;
+    border-radius: 2px;
+    margin: 5px;
 }
 
-.scroll-bar .menu{
+.scroll-bar .menu {
     display: flex;
-   
     justify-content: center;
     align-items: center;
     border: black 2px solid;
     padding: 2px;
     margin: 0 5px 5px;
     flex-grow: 1;
-
 }
 
-.sec-div{
+.sec-div {
     display: flex;
     flex-direction: column;
     width: 49%;
@@ -66,31 +64,114 @@ margin: 5px;
     padding: 5px;
     justify-items: center;
     align-items: center;
+    gap: 10px;
+}
+
+.sec-div .navbar {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
-    
-}   
-
-.sec-div .navbar{
-    flex-direction: column;
-        border: gray 2px solid;
-        border-radius: 2px;
-        
+    width: 100%;
+    border: gray 2px solid;
+    border-radius: 2px;
 }
+
 .sec-div .watmind {
-border: gray 2px solid;
+    display: flex;
+    gap: 10px;
+    border: gray 2px solid;
     border-radius: 2px;
-  
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
 }
+
+.photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.watmind .pmind {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.watmind input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.post button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 .sec-div .content {
-border: gray 2px solid;
-    border-radius: 2px;
-  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    min-height: 200px;
+    /* Ensure it is visible even when empty */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 50vh;
+    overflow-y: scroll;
 }
 
+.post-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
 
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
 
-.third-div{ 
+.post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post-username {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.post-body {
+    font-size: 16px;
+    color: #333;
+}
+
+.post-footer {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.third-div {
     display: flex;
     flex-direction: column;
     width: 24%;
@@ -100,11 +181,29 @@ border: gray 2px solid;
     justify-content: center;
     align-items: center;
     padding: 5px;
-}   
-
-.third-div .friend{
-    display: flex;
-    border: gray 2px solid;
-    border-radius: 2px;
-    width:max-content;
 }
+
+.third-div .friend {
+    display: flex;
+    padding: 10px;
+    border: gray 2px solid;
+    border-radius: 5px;
+    width: max-content;
+    background-color: #f4f4f4;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+#delete{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.post-item{
+    position: relative;
+}
+

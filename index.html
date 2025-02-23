@@ -5,21 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="main-div">
       <div class="scroll-bar">
         <div class="logo">
-          <div>l</div>
-          <div>search</div>
+          <div class=".fa fa-facebook">logo</div>
+          <div class="search">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search Facebook"
+            />
+          </div>
         </div>
         <div class="menu">menu</div>
       </div>
       <!-- second div -->
       <div class="sec-div">
-        <div class="navbar">navsection</div>
-        <div class="watmind">placeholder</div>
-        <div class="content">content</div>
+        <div class="navbar">
+          <span class="icon">🏠</span>
+          <span class="icon">🎥</span>
+          <span class="icon">🛒</span>
+          <span class="icon">👤</span>
+          <span class="icon">➕</span>
+        </div>
+        <div class="watmind">
+          <div class="photo">
+            <img
+              src="https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=1024x1024&w=is&k=20&c=Yu8jBIVdSo149ZSApI0lVnrnDRY8A7C3JH-8J-U2yxc="
+              alt="logo"
+            />
+          </div>
+          <form class="pmind">
+            <input
+              type="text"
+              class="search-input"
+              id="postInput"
+              placeholder="What's on your mind?"
+              oninput="togglePostButton()"
+            />
+            <div class="post">
+              <button id="postButton" onclick="postContent()" disabled>
+                Postt
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="content" id="contentArea"></div>
       </div>
       <!-- third div -->
       <div class="third-div">
@@ -32,5 +69,6 @@
         <div class="friend">friends</div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
